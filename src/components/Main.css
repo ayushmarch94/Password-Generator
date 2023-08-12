@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+.page{
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: slategray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main{
+    border: 2px solid black;
+    height: 100%;
+    width: 30%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    background-color: rgb(49, 54, 58);
+    border-radius: 15px;
+}
+
+
+
+
+button{
+    height: 100%;
+    width: 150%;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 15px;
+    background-color: steelblue;
+    margin-top: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover{
+    height: 100%;
+    width: 170%;
+    margin-left: -5%;
+}
+
+button:active{
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin: 10%;
+    border-radius: 15px;
+}
+.view{
+    height: 100%;
+    width: 80%;
+    border-radius: 15px 0px 0px 15px;
+    color:white;
+    margin: 0%;
+}
+
+.output{
+    background-color: white;
+    height:30px;
+    width: 95%;
+    height: 0%;
+    color: black;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.output p{
+    font-size: 20px;
+    height: 4px;
+    border-radius: 10px;
+}
+
+.formier{
+    height: 80%;
+    width: 20%;
+    border-radius: 0px 15px 15px 0px;
+    color:white;
+    margin-left: 0%;
+}
+
+.length{
+    width: 80%;
+    margin-top: 10px; 
+}
+
+.copy{
+    background-color: white;
+    border-radius: 15px;
+}
+
+.copy img{
+    margin-left: 5px;
+}
+
+
+.inputer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+.length{
+    margin-top: 10px;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.capital{
+    margin-top: 10px;
+    width: 50px;
+    height: 30px;
+}
+
+.small{
+    margin-top: 10px;
+    width: 50px;
+    height: 30px;
+}
+.number{
+    margin-top: 10px;
+    width: 50px;
+    height: 30px;
+}
+.symbol{
+    margin-top: 10px;
+    width: 50px;
+    height: 30px;
+}
+
+.a{
+    margin-top: 20px;
+}
