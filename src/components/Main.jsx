@@ -101,6 +101,9 @@ export default function Main() {
           </div>
         </div>
       </div>
+      <div className="footer"> 
+        <p>@Ayush</p>
+      </div>
     </div>
   );
 }

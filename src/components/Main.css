@@ -6,7 +6,7 @@
 }
 .page{
     height: 500px;
-    background-color: slategray;
+    background-color: slateblue;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -17,7 +17,7 @@
     height: 400px;
     width: 400px;
     margin-top: 40px;
-    background-color: rgb(49, 54, 58);
+    background-color: whitesmoke;
     border-radius: 15px;
 }
 
@@ -56,8 +56,11 @@ button:active{
     height: 100px;
     width: 300px;
     border-radius: 15px 0px 0px 15px;
-    color:white;
+    color: black;
+}
 
+.view p{
+    font-weight: bold;
 }
 
 .output{
@@ -68,6 +71,7 @@ button:active{
     border-radius: 10px 0px 0px 10px;
     display: flex;
     justify-content: space-around;
+    border : 2px solid black;
 
 }
 
@@ -148,3 +152,17 @@ button:active{
     margin-top: 20px;
 }
 
+.page{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer{
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    color: slategray;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
