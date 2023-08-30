@@ -6,30 +6,30 @@
 }
 .page{
     height: 500px;
-    background-color: slateblue;
+    background-color: skyblue;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .main{
-    border: 2px solid black;
     height: 400px;
     width: 370px;
     margin-top: 40px;
-    background-color: whitesmoke;
+    background-color: white;
     border-radius: 15px;
 }
 
 button{
-    box-shadow: inset 8px 10px 10px 1px rgba(0,0,0,0.5);
     margin-left: -230px;
     padding: 5px;
     width: 120px;
     border-radius: 10px;
-    background-color: white;
+    border: none;
+    background-color: rgb(237, 0, 0);
     font-weight: bold;
     transition: 0.3s;
+    color: white;
 }
 
 button:hover{
