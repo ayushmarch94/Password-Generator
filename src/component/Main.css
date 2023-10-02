@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: linear-gradient(to right, #7474BF, #348AC7)
+}
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+}
+
+.main{
+    background-color: white;
+    height: 300px;
+    width: 70%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.container{
+    margin: 30px;
+    height: 50px;
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.container img{
+    margin: 10px;
+}
+
+.show{
+    height: 40px;
+    width: 1000px;
+    margin: 10px;
+}
+
+#length{
+    width: 70%;
+}
+
+#checks{
+
+}
