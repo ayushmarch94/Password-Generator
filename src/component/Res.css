@@ -1,0 +1,44 @@
+@media screen and (max-width: 800px) {
+    #down{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 75%;
+    }
+    #checks{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #char{
+        display: flex;
+        flex-direction: column;
+    }
+    #char p{
+        margin-top: 30px;
+    }
+    
+    #bottompart{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items:end;
+    }
+
+    #checks input{
+        margin-top: 20px;
+    }
+
+    #length{
+        margin-top: 10px;
+    }
+    .container{
+        margin-top: 50px;
+    }
+
+    .main{
+        height: 500px;
+        margin-top: 200px;
+    }
+}
