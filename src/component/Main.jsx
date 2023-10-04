@@ -9,6 +9,7 @@ export default function Main() {
   const [Small, setSmall] = useState(false);
   const [Number, setNumber] = useState(false);
   const [Symbol, setSymbol] = useState(false);
+  const [showPassword, setShowPassword] = useState(true);
 
   const generatePassword = () => {
     const capitalLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -23,7 +24,6 @@ export default function Main() {
     if (Number) possibleCharacters += numbers;
     if (Symbol) possibleCharacters += symbols;
 
-    
     let newPassword = "";
     for (let i = 0; i < Length; i++) {
       newPassword +=
@@ -35,15 +35,36 @@ export default function Main() {
     setPassword(newPassword);
   };
 
+  const copyPassword = () => {
+    navigator.clipboard.writeText(Password);
+    window.alert("Password copied");
+  };
+
   return (
     <div className="page">
       <div className="main">
         <div className="container">
           <div className="show">
-            <input placeholder="Click on generate " value={Password} readOnly />
+            <input
+              placeholder="Click on generate"
+              value={Password}
+              type={showPassword ? "text" : "password"}
+              readOnly
+            />
           </div>
-          <img src={require("../Images/eye.png")} alt="icon" width={30} />
-          <img src={require("../Images/copy.png")} alt="icon" width={30} />
+          <img
+            id="eye"
+            src={require("../Images/eye.png")}
+            alt="icon"
+            onClick={() => setShowPassword(!showPassword)}
+            width={30}
+          />
+          <img
+            src={require("../Images/copy.png")}
+            alt="icon"
+            onClick={copyPassword}
+            width={30}
+          />
         </div>
         <div id="down">
           <input
@@ -92,7 +113,7 @@ export default function Main() {
         </div>
         <div className="buttons">
           <button onClick={generatePassword}>Generate</button>
-          <button>COPY</button>
+          <button onClick={copyPassword}>COPY</button>
         </div>
       </div>
     </div>
